@@ -7,15 +7,16 @@ body {
 
 nav {
     background: #0038B8;
-    padding: 15px;
+    padding: 20px;
     text-align: center;
 }
 
 nav a {
     color: white;
-    margin: 0 15px;
+    margin: 0 50px;
     text-decoration: none;
     font-weight: bold;
+    font-size: 50px;
 }
 
 header {
@@ -38,3 +39,8 @@ footer {
     padding: 20px;
     color: #777;
 }
+
+.styled-list li::marker {
+    font-weight: bold;
+}
+
