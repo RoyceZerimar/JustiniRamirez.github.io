@@ -2,34 +2,51 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume | Justin Ramirez</title>
+    <title>Résumé | Justin Ramirez</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-<nav>
-    <a href="index.html">Home</a>
-    <a href="code-review.html">Code Review</a>
-    <a href="artifact.html">Artifact</a>
-    <a href="resume.html">Resume</a>
-    <a href="contact.html">Contact</a>
-</nav>
-
-<header>
-    <h1>Resume</h1>
+<header class="site-header">
+    <div class="container nav-container">
+        <div class="logo">JR</div>
+        <nav class="nav">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="artifact.html" class="nav-link">Projects</a>
+            <a href="resume.html" class="nav-link active">Résumé</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+        </nav>
+    </div>
 </header>
 
-<section>
-    <p><a href="resume.pdf" download>Download Resume (PDF)</a></p>
+<main>
+    <section class="section">
+        <div class="container">
+            <h1>Résumé</h1>
+            <p class="section-intro">
+                You can view my résumé directly on this page or download a copy as a PDF.
+            </p>
 
-    <h2>Résumé Preview</h2>
+            <div class="resume-actions">
+                <a href="resume.pdf" target="_blank" class="btn primary">Open PDF in New Tab</a>
+                <a href="resume.pdf" download class="btn ghost">Download Résumé</a>
+            </div>
 
-    <embed src="resume.pdf" type="application/pdf" width="100%" height="800px" />
-</section>
-<footer>
-    <p>© 2026 Justin Ramirez</p>
+            <div class="resume-embed">
+                <!-- Uses the existing resume.pdf in your folder -->
+                <iframe src="resume.pdf" title="Justin Ramirez Résumé"></iframe>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <div class="container footer-content">
+        <p>© <span id="year"></span> Justin Ramirez · Software Engineer</p>
+    </div>
 </footer>
 
+<script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+</script>
 </body>
 </html>
