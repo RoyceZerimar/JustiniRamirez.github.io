@@ -2,33 +2,66 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact | Justin Ramirez</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-<nav>
-    <a href="index.html">Home</a>
-    <a href="code-review.html">Code Review</a>
-    <a href="artifact.html">Artifact</a>
-    <a href="resume.html">Resume</a>
-    <a href="contact.html">Contact</a>
-</nav>
-
-<header>
-    <h1>Contact</h1>
+<header class="site-header">
+    <div class="container nav-container">
+        <div class="logo">JR</div>
+        <nav class="nav">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="artifact.html" class="nav-link">Projects</a>
+            <a href="resume.html" class="nav-link">Résumé</a>
+            <a href="contact.html" class="nav-link active">Contact</a>
+        </nav>
+    </div>
 </header>
 
-<section>
-    <p><strong>Email:</strong> royalqubit@gmail.com</p>
-    <p><strong>GitHub:</strong> <a href="https://github.com/RoyceZerimar">GitHub Profile</a></p>
-    <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/justinroyceramirez">LinkedIn Profile</a></p>
-</section>
+<main>
 
-<footer>
-    <p>© 2026 Justin Ramirez</p>
+  
+    <section class="section">
+          
+        <div class="container contact-layout">
+            <div>
+                <h1>Contact</h1>
+                <p class="section-intro">
+                    I’m open to opportunities in software engineering, especially roles that value clean code,
+                    problem‑solving, and continuous learning.
+                </p>
+
+                <div class="contact-card">
+                    <h2>Get in Touch</h2>
+                    <ul class="contact-list">
+                        <!-- TODO: Replace with your real info -->
+                        <section>
+             
+  
+    </section>
+  
+
+                        <li><strong>Email:</strong> <a href="mailto:royalqubit@gmail.com">royalqubit@gmail.com</a></li>
+                        <li><strong>GitHub:</strong> <a href="https://github.com/RoyceZerimar" target="_blank">github.com/RoyceZerimar</a></li>
+                        <li><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/justinroyceramirez" target="_blank">linkedin.com/in/justinroyceramirez</a></li>
+                        <li><strong>Location:</strong> Bonney Lake, WA</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <div class="container footer-content">
+        <p>© <span id="year"></span> Justin Ramirez · Software Engineer</p>
+    </div>
 </footer>
 
+
+
+<script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+</script>
 </body>
 </html>
