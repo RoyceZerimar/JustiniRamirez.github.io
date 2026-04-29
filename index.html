@@ -2,111 +2,131 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Justin Ramirez | ePortfolio</title>
+    <title>Justin Ramirez | Software Engineer</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-<nav>
-    <a href="index.html">Home</a>
-    <a href="code-review.html">Code Review</a>
-    <a href="artifact.html">Artifact</a>
-    <a href="resume.html">Resume</a>
-    <a href="contact.html">Contact</a>
-</nav>
-
-<header>
-    <h1>Professional Self‑Assessment</h1>
+<header class="site-header">
+    <div class="container nav-container">
+        <div class="logo">JR</div>
+        <nav class="nav">
+            <a href="index.html" class="nav-link active">Home</a>
+            <a href="artifact.html" class="nav-link">Projects</a>
+            <a href="resume.html" class="nav-link">Résumé</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+        </nav>
+    </div>
 </header>
 
-<section>
-    <h2 style="text-align:center;">Professional Self‑Assessment</h2>
+<main>
+    <section class="hero">
+        <div class="container hero-grid">
+            <div>
+                <p class="eyebrow">Software Engineer · BS Computer Science, SNHU</p>
+                <h1>Hi, I’m Justin Ramirez.</h1>
+                 <!-- HEADSHOT -->
+                <div class="headshot-wrapper">
+                    <img src="IMG_1460.JPG" alt="Justin Ramirez Headshot">
+                </div>
+                <p class="hero-text">
+                    I’m a software engineer with a strong foundation in computer science, clean code,
+                    and practical problem‑solving. I enjoy building reliable, secure, and maintainable
+                    applications that create real impact.
+                </p>
+                <div class="hero-actions">
+                    <a href="resume.html" class="btn primary">View Résumé</a>
+                    <a href="artifact.html" class="btn ghost">View Projects</a>
+                </div>
+                <div class="hero-links">
+                    <!-- TODO: Replace with your real links -->
+                    <a href="https://github.com/RoyceZerimar" target="_blank">GitHub</a>
+                    <span>·</span>
+                    <a href="https://linkedin.com/in/justinroyceramirez" target="_blank">LinkedIn</a>
+                    <span>·</span>
+                    <a href="mailto:royalqubit@gmail.com">Email</a>
+                </div>
+            </div>
+           <div class="hero-right">
 
-    <h3 style="text-align:center;">By Justin Ramirez</h3>
+        
+            <!-- EXISTING HERO CARD -->
+            <div class="hero-card">
+                <h2>Core Focus Areas</h2>
+                <ul class="pill-list">
+                    <li>Software Design & Refactoring</li>
+                    <li>Secure Coding Practices</li>
+                    <li>APIs & Data Integration</li>
+                    <li>Testing & Code Quality</li>
+                </ul>
+                <p class="hero-note">
+                    BS in Computer Science from Southern New Hampshire University, with hands‑on
+                    experience across software engineering, security, and databases.
+                </p>
+            </div>
 
-    <ol type="A" class="styled-list">
-        <li>
-            <h3>How My Coursework and ePortfolio Development Prepared Me</h3>
+</div>
 
-            <p>
-                Completing the Computer Science program and developing my ePortfolio has allowed me to clearly 
-                demonstrate my strengths as a software developer and refine the professional goals and values 
-                that guide my work. Throughout the program, I learned how to approach problems like an engineer, 
-                breaking down complex requirements, designing modular solutions, and writing secure, maintainable 
-                code. Building my ePortfolio helped me recognize how these skills fit together and how they prepare 
-                me to enter the field with confidence.
-            </p>
+        </div>
+    </section>
 
-            <p>
-                Across my coursework, I gained experience collaborating in team environments, participating in code 
-                reviews, and communicating technical decisions to both technical and non‑technical stakeholders. 
-                Group projects and Agile‑based assignments taught me how to work iteratively, provide constructive 
-                feedback, and document my work so others can understand and build on it. These experiences strengthened 
-                my ability to contribute effectively in real development teams.
-            </p>
+    <section class="section">
+        <div class="container two-column">
+            <div>
+                <h2>About Me</h2>
+                <p>
+                    I bring a mix of technical skills, leadership, and real‑world experience. My work
+                    spans building and enhancing applications, improving security posture, and working
+                    with data‑driven systems.
+                </p>
+                <p>
+                    I value clarity, maintainability, and thoughtful design. I enjoy taking complex
+                    requirements and turning them into clean, well‑structured solutions.
+                </p>
+            </div>
+            <div>
+                <h3>Technical Snapshot</h3>
+                <div class="skills-grid">
+                    <div>
+                        <h4>Languages</h4>
+                        <ul>
+                            <li>Python</li>
+                            <li>Java</li>
+                            <li>C++</li>
+                            <li>SQL</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4>Tools & Tech</h4>
+                        <ul>
+                            <li>Git & GitHub</li>
+                            <li>VS Code</li>
+                            <li>REST APIs</li>
+                            <li>Relational Databases</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4>Strengths</h4>
+                        <ul>
+                            <li>Refactoring legacy code</li>
+                            <li>Security‑minded design</li>
+                            <li>Debugging & troubleshooting</li>
+                            <li>Clear documentation</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
 
-            <p>
-                I also developed a strong foundation in data structures and algorithms, learning how to evaluate 
-                complexity, choose appropriate structures, and design efficient solutions. Courses in software engineering 
-                and database development taught me how to design full systems from user interfaces to backend logic and 
-                database schemas, while following industry standards and the Software Development Lifecycle (SDLC). Through 
-                hands‑on projects, I learned to create structured databases, write optimized queries, and integrate 
-                client‑side applications with server‑side data.
-            </p>
-
-            <p>
-                Security was a major focus throughout the program. I learned secure coding practices, encryption techniques, 
-                vulnerability analysis, and how to design systems that protect user data. These concepts became especially 
-                important in my capstone work, where I applied encryption, authentication, and secure architecture principles 
-                to build a professional‑quality application.
-            </p>
-
-            <p>
-                Overall, the combination of coursework, hands‑on projects, and ePortfolio development helped me showcase my 
-                strengths in problem‑solving, secure software design, UI/UX development, debugging, and full‑stack engineering. 
-                It also shaped my professional values, prioritizing clarity, security, user experience, and maintainability in 
-                every project I build.
-            </p>
-
-        </li>
-
-        <li>
-           <h3>How My Artifact Fits Into the Portfolio</h3>
-
-            <p>
-                The primary artifact in my portfolio is my capstone project, SecureVault, formaly Password Manager, a fully enhanced password manager 
-                that demonstrates the depth and range of my computer science abilities. Although it is a single artifact, it 
-                represents multiple areas of the discipline working together in one cohesive system. SecureVault showcases my 
-                skills in software engineering, secure coding, encryption, database design, UI/UX development, debugging, and 
-                architectural decision making. Because it integrates so many components, it effectively reflects the full scope 
-                of what I learned throughout the program.
-            </p>
-
-            <p>
-                SecureVault also serves as a strong introduction to the technical work that follows in my portfolio. It 
-                demonstrates how I apply data structures and algorithms to manage stored credentials efficiently, how I design 
-                and interact with databases to support secure data handling, and how I incorporate security principles such as 
-                hashing, encryption, and safe input handling. The project also highlights my ability to communicate design 
-                decisions, structure code in a modular and maintainable way, and build a user‑friendly interface that aligns 
-                with modern UI/UX standards.
-            </p>
-
-            <p>
-                Even though my portfolio centers on this single artifact, SecureVault brings together the essential elements of 
-                computer science into one complete, professional‑quality application. It provides a clear picture of my technical 
-                strengths, my approach to problem solving, and my readiness to contribute to real‑world software development 
-                environments.
-            </p>
-
-        </li>
-    </ol>
-
-</section>
-
-<footer>
-    <p>© 2026 Justin Ramirez</p>
+<footer class="site-footer">
+    <div class="container footer-content">
+        <p>© <span id="year"></span> Justin Ramirez · Software Engineer</p>
+    </div>
 </footer>
 
+<script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+</script>
 </body>
 </html>
